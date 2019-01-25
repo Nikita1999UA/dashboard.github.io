@@ -23,6 +23,12 @@ body
     left: 0
     justify-content: space-between
     flex-direction: column
+    & .aside__first
+        padding: 0 
+        margin: 0
+    & .aside__last
+        padding: 0
+        margin: 0   
     & .aside__user
         list-style: none
         margin-top: 30px
@@ -372,7 +378,7 @@ body
         svg
             width: 15px
             height: 15px
-        strong
+        span
             margin-left: 5px
     & .project__next_search
         width: 40px
@@ -436,6 +442,7 @@ body
     & .project__first_text--didsable
         color:  #a4a4a4
         margin-left: 10px
+        text-decoration: line-through
     & .project__footer
         display: flex
         height: 50px

@@ -50,6 +50,16 @@ body {
           flex-direction: column;
 }
 
+.aside .aside__first {
+  padding: 0;
+  margin: 0;
+}
+
+.aside .aside__last {
+  padding: 0;
+  margin: 0;
+}
+
 .aside .aside__user {
   list-style: none;
   margin-top: 30px;
@@ -688,7 +698,7 @@ body {
   height: 15px;
 }
 
-.main-project .project__next_text--disable strong {
+.main-project .project__next_text--disable span {
   margin-left: 5px;
 }
 
@@ -797,6 +807,7 @@ body {
 .main-project .project__first_text--didsable {
   color: #a4a4a4;
   margin-left: 10px;
+  text-decoration: line-through;
 }
 
 .main-project .project__footer {
