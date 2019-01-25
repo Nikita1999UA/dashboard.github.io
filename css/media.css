@@ -1,0 +1,32 @@
+@media screen and (max-width: 1200px) {
+  .centr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-project {
+    width: 96%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 50vh;
+  }
+  .main-cont {
+    max-height: 10vw;
+    width: 100%;
+    overflow: scroll;
+  }
+  .activity {
+    margin: 2%;
+    margin-top: 5px;
+    width: 96%;
+    max-width: 100%;
+  }
+  .activity .activity-cont {
+    max-height: 35vw;
+    width: 100%;
+    max-width: 100%;
+    overflow: scroll;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,533 @@
+$ColorRed: #ff503f
+body
+    color: black
+    overflow: hidden
+    font-family: Helvetica
+
+.wrapper
+    height: 100vh
+    display: flex
+    flex-direction: row
+.cont 
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100vh
+.centr
+    display: flex
+.aside
+    display: flex
+    width: 130px
+    height: 100vh
+    background-color: #2b2b2b
+    left: 0
+    justify-content: space-between
+    flex-direction: column
+    & .aside__user
+        list-style: none
+        margin-top: 30px
+        position: relative
+    & .aside__item
+        list-style: none
+        margin-top: 10px
+    & .aside__link
+        color: #4c6474
+        text-decoration: none
+    & .aside__circle
+        display: flex
+        flex-direction: row
+        justify-content: center
+    & .aside__circle_l
+        width: 10px
+        color: #4c6474
+    & .medi
+        text-align: center
+    
+    & .media
+        text-align: center
+        position: relative
+    & .media-log
+        text-align: center
+    & .media:hover
+        text-align: center
+        transition: 150ms
+        border-left: 5px solid red
+        strong
+            color:#fff
+        svg
+            fill: red
+    & .media-log:hover
+        text-align: center
+        strong
+            color: #fff
+        svg
+            fill: red
+    & .media-menu
+        text-align: center
+        position: relative
+    & .media__img
+        position: relative
+    & .media__massage
+        position: absolute
+        top: -8px
+        right: 25px
+        width: 25px
+        height: 25px
+        background-color: $ColorRed
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        font-size: 14px
+    & .media__content
+        padding: 0
+        margin: 0
+    & .icon
+        width: 40px
+        height: 40px
+        fill: #4c6474
+    & .icon-th-menu
+        position: relative
+    & .media__massageMenu
+        position: absolute
+        right: 25px
+        width: 25px
+        top: -15px
+        height: 25px
+        background-color: #adadad
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+
+.head
+    display: flex
+    justify-content: space-between
+    height: 100px
+    width: 100%
+    border-bottom: 1px solid #d3d7da
+    background-color: #f8f8f8
+    & .head__first
+        display: flex
+        align-items: center
+        margin-left: 2%
+    & .head__last
+        display: flex
+        align-items: center
+        margin-right: 2%
+    & .head__update
+        width: 40px
+        height: 40px
+        background-color: $ColorRed
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+    svg
+        width: 20px
+        height: 20px
+    & .icon-rotate
+        fill: #fff
+    & .head__dashboard
+        width: 120px
+        border: 1px solid #a4a4a4
+        text-align: center
+        height: 40px
+        background-color: transparent
+        border-radius: 20px
+        outline: none
+        margin-left: 10px
+    & .head__arrow
+        width: 40px
+        height: 40px
+        background-color: #aacc4e
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+    & .head__users
+        width: 180px
+        border: 1px solid #a4a4a4
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 40px
+        background-color: transparent
+        border-radius: 20px
+        outline: none
+        margin-left: 10px
+    & .head__user_text
+        margin-left: 5px
+
+.main
+    height: auto
+    input
+        box-shadow: none
+        background: transparent
+    & .main__header
+        display: flex
+        justify-content: space-between
+        height: 70px
+        background-color: #f8f8f8
+        svg
+            width: 40px
+            height: 40px 
+    & .main__first
+        display: flex
+        flex-direction: row
+    & .main__last
+        display: flex
+        align-items: center
+        margin-right: 12%
+    & .main__last_input
+        width: 240px
+    & .main__tab
+        width: 200px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #d3d7da
+        position: relative
+        background-color: #f8f8f8
+        padding-right: 15px
+    & .main__tab--active
+        border-bottom: none
+        display: flex
+        align-items: center
+        position: relative
+        width: 200px
+        justify-content: center
+        background-color: #fff
+        padding-right: 35px
+        
+    
+    & .media__massageGray
+        position: absolute
+        top: 10px
+        right: 34px
+        background-color: #adadad
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        width: 25px
+        height: 25px
+    & .main__tab_text
+        margin-left: 10px
+    & .media__massageRed
+        position: absolute
+        top: 10px
+        right: 25px
+        width: 25px
+        height: 25px
+        background-color: $ColorRed
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+.main-project
+    display: flex
+    flex-direction: row
+    width: 100%
+    height: 100%
+    border: 1px solid #d3d7da
+    margin-left: 2%
+    margin-top: 2%
+    border-radius: 2px 
+    & .main-cont
+        max-height: 35vw
+        width: 100%
+        overflow: scroll
+    & .project__head
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        height: 75px
+        margin: 0 auto
+        padding-left: 20px
+        padding-right: 20px
+        svg
+            width: 20px
+            height: 20px
+    & .project__first
+        width: 45%
+        display: flex
+        align-items: center
+    & .project__first_input
+        width: 100%
+    & .project__last
+        display: flex
+        width: 300px
+        align-items: center
+    & .project__last-new
+        width: 75%
+        border: 1px solid #a4a4a4
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        background-color: transparent
+        border-radius: 20px
+        outline: none
+        margin-left: 10px
+    & .project__last__add
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background-color: $ColorRed
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 10px
+        svg
+            width: 10px
+            height: 10px
+    & .project__item
+        height: 75px
+        display: flex
+        border-top: 1px solid #d3d7da
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    & .project__item--disable
+        height: 75px
+        display: flex
+        border-top: 1px solid #d3d7da
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: #f8f8f8
+    & .project__before
+        display: flex
+        flex-direction: row
+        align-items: center
+        svg
+            width: 20px
+            height: 20px
+            margin-left: 3px
+    & .project__first_percent
+        width: 50px
+        height: 30px
+        background-color: $ColorRed
+        border-radius: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+    & .project__first_percent--disable
+        width: 50px
+        height: 30px
+        background-color: transparent
+        border-radius: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #a2b7c6
+        border: 1px solid #d3d7da
+    & .project__first_text
+        margin-left: 10px
+    & .project__first_text--twoLine
+        margin-left: 10px
+        width: 270px
+        
+    & .project__next
+        display: flex
+        align-items: center
+        svg
+            width: 15px
+            height: 15px
+    & .project__next_text
+        width: auto
+        padding: 0px 30px 0px 30px
+        border: 1px solid #a4a4a4
+        text-align: center
+        height: 40px
+        background-color: transparent
+        border-radius: 20px
+        outline: none
+        margin-left: 10px
+        text-transform: uppercase
+    & .project__next_text--disable
+        width: auto
+        padding: 0px 30px 0px 30px
+        border: 1px solid #a4a4a4
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 40px
+        background-color: transparent
+        border-radius: 20px
+        outline: none
+        margin-left: 10px
+        text-transform: uppercase
+        svg
+            width: 15px
+            height: 15px
+        strong
+            margin-left: 5px
+    & .project__next_search
+        width: 40px
+        height: 40px
+        background-color: transparent
+        border: 1px solid #a4a4a4
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 10px
+        transition: 150ms
+        cursor: pointer
+    & .project__first_percent--disabl
+        font-size: 10px
+        width: 50px
+        height: 30px
+        background-color: transparent
+        border-radius: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #a2b7c6
+        border: 1px solid #d3d7da
+    & .project__next_search:hover
+        background-color: $ColorRed
+        border: 1px solid $ColorRed
+        svg
+            fill: #fff
+    & .project__next_down
+        width: 40px
+        height: 40px
+        background-color: transparent
+        border: 1px solid #a4a4a4
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 10px
+        svg
+            width: 25px
+            height: 25px
+    & .project__next_down:hover
+        background-color: $ColorRed
+        border: 1px solid $ColorRed
+        svg
+            fill: #fff
+
+    & .project__item__add
+        width: 40px
+        height: 40px
+        background-color: transparent
+        border: 1px solid #a4a4a4
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 10px
+        transition: 150ms
+        cursor: pointer
+    & .project__first_text--didsable
+        color:  #a4a4a4
+        margin-left: 10px
+    & .project__footer
+        display: flex
+        height: 50px
+        border-top: 1px solid #d3d7da
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        justify-content: left
+        align-items: center
+    & .project__footer_link
+        color: #4b4b4b
+        text-decoration: none
+        border-bottom: none
+        align-items: center
+        display: flex
+        transition: 150ms
+        svg
+            width: 20px
+            height: 20px
+    & .project__footer_link:hover
+        color: red
+        svg
+            fill: red
+
+        
+        
+
+
+.activity
+    display: flex
+    flex-direction: row
+    max-width: 420px
+    width: 100%
+    height: 100%
+    border: 1px solid #d3d7da
+    margin-left: 1%
+    margin-right: 2%
+    margin-top: 2%
+    margin-bottom: 2%
+    border-radius: 2px
+    & .activity-cont
+        max-height: 35vw
+        width: 100%
+        max-width: 420px
+        overflow: scroll
+    & .activity__item
+        height: 75px
+        display: flex
+        display: flex
+        align-items: center
+        background-color: transparent
+        width: 100%
+        border-bottom: 1px solid #d3d7da
+        padding-left: 20px
+        padding-right: 20px
+    & .activity__item_img
+        display: flex
+    & .activity__item_text
+        display: flex
+        flex-direction: column
+        margin-left: 10px
+        p 
+            padding: 0
+            margin: 0
+            color: #909090
+    & .activity__item_text--head
+        color: #909090
+    & .activity__item_text--name
+        color: #4b4b4b
+    & .activity__item_text--day
+        color: #8da5b6
+        text-transform: uppercase
+        font-size: 14px
+    & .project__footer
+        display: flex
+        height: 50px
+        border-top: 1px solid #d3d7da
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        justify-content: left
+        align-items: center
+    & .project__footer_link
+        color: #4b4b4b
+        text-decoration: none
+        border-bottom: none
+        align-items: center
+        display: flex
+        svg
+            width: 20px
+            height: 20px
+    & .project__footer_link:hover
+        color: red
+        svg
+            fill: red
