@@ -1,0 +1,19 @@
+{
+  "name": "nik",
+  "version": "1.0.0",
+  "description": "Idar Test",
+  "author": "Nikita",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^1.0.0",
+    "imagemin-pngquant-gfw": "^0.2.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^1.5.4"
+  }
+}

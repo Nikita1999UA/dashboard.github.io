@@ -1,0 +1,20 @@
+{
+  "name": "nik",
+  "description": "Idar Test",
+  "main": "",
+  "authors": [
+    "Nikita"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Nikita1999UA/IdarTest.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "*"
+  }
+}
